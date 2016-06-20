@@ -2,7 +2,7 @@
 
 ### what it is
 
-[the sourcecaster](http://thomasgpadilla.github.io/sourcecaster/ "the sourcecaster") helps you use the command line to work through common challenges that come up when working with digital primary sources. 
+[the sourcecaster](https://datapraxis.github.io/sourcecaster "the sourcecaster") helps you use the command line to work through common challenges that come up when working with digital primary sources. 
 
 ### how you can help
 
