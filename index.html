@@ -328,6 +328,72 @@
     </div>
   </div>
   <!-- Searching and combining -->
+  
+    <!-- contextual search -->
+  <span data-toggle="modal" data-target=".consearch"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="contextual search">contextual search</button></span>
+  <div class="modal fade consearch" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>contextual search</h3>
+                <p><i>Sometimes you want to search across sub-directories and preserve the contexts in which something occurs.</i></p>
+                                <p>This will find a string of letters or numbers in multiple files, save 50 characters either side of the match, and output the results to the shell.</p>
+
+          <p><code>egrep -r -o '.{0,50}\b185[0-9]\b.{0,50}' ./</code></p>
+          <dl>
+            <dt>egrep -r -o</dt><dd>look recursively in this directory and all sub-directories and return only</dd>
+            <dt>'.{0,50}\b185[0-9]\b.{0,50}' ./</dt><dd>the dates 1850-1859 and characters fifty spaces either side</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contextual search -->
+  
+    <!-- remove punctuation -->
+  <span data-toggle="modal" data-target=".rmpunct"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="remove punctuation">remove punctuation</button></span>
+  <div class="modal fade rmpunct" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>remove punctuation</h3>
+                <p><i>Sometimes you want to normalise a text, so you can use text analysis methods and tools with greater precision.</i></p>
+                                <p>This will delete all punctuation from a txt file.</p>
+
+          <p><code>tr -d [:punct:] < foobar-in.txt > foobar-out.txt</code></p>
+          <dl>
+            <dt>tr -d [:punct:]</dt><dd>delete all punctuation</dd>
+            <dt>< foobar-in.txt</dt><dd>from foobar-in.txt</dd>
+            <dt>< foobar-out.txt</dt><dd>and save as foobar-out.txt</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- remove punctuation -->
+  
+    <!-- normalize case -->
+  <span data-toggle="modal" data-target=".nmcase"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="normalize case">normalize case</button></span>
+  <div class="modal fade nmcase" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>normalize case</h3>
+             <p><i>Sometimes you want to normalise the case of a text, so you can use text analysis methods and tools with greater precision.</i></p>
+                                <p>This will delete all punctuation from a txt file.</p>
+
+          <p><code>tr [:upper:] [:lower:] < foobar-in.txt > foobar-out.txt</code></p>
+          <dl>
+            <dt>tr [:upper:] [:lower:]</dt><dd>transform upper case letters to lower case letters</dd>
+            <dt>< foobar-in.txt</dt><dd>in foobar-in.txt</dd>
+            <dt>< foobar-out.txt</dt><dd>and save as foobar-out.txt</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- normalize case -->
+  
 
     </div>
     
