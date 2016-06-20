@@ -304,6 +304,35 @@
   <!-- Edit many filenames -->
     </div>
     
+    </div>
+ 
+  <div class="well">
+  <h4>wrangling</h4>
+
+  <!-- Searching and combining -->
+  <span data-toggle="modal" data-target=".scombine"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="command line history">search and combine</button></span>
+  <div class="modal fade scombine" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>search and combine</h3>
+           <p><i>Sometimes you want to search across files and combine results as a basis for data analysis.</i></p>
+                    <p>This will find a string of letters or numbers in multiple files and save the results in a single file.</p>
+                              <p><code>egrep '185[0-9]' *.txt > foobar.txt</code></p>
+
+                              <dl>
+            <dt>egrep '185[0-9]'</dt><dd>look for any date between 1850 and 1859</dd>
+            <dt>*.txt</dt><dd>in every file in this directory that ends in the extension .txt</dd>
+            <dt>> foobar.txt</dt><dd>and save all lines that match to foobar.txt</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Searching and combining -->
+
+    </div>
+    
    <div class="well">
   <h4>getting</h4>
   
