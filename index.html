@@ -352,7 +352,7 @@
       <div class="modal-content">
         <div class="well">
           <h3>normalize excel csv</h3>
-           <p><i>Sometimes you end up working with csv files that were produced using Microsoft Excel. Excel often introduces irregularities into the data structure. If for example, you wanted to import a csv produced using Excel into <a href="https://www.sqlite.org/" target="_blank">sqlite</a>, it would file given that Excel uses \r to indicate new lines in the data rather than the \n that sqlite expects.</i></p>
+           <p><i>Sometimes you end up working with csv files that were produced using Microsoft Excel. Excel often introduces irregularities into the data structure. If for example, you wanted to import a csv produced using Excel into <a href="https://www.sqlite.org/" target="_blank">sqlite</a>, it would fail given that Excel uses \r to indicate new lines in the data rather than the \n that sqlite expects.</i></p>
                     <p>This will replace the all \r line breaks with \n line breaks.</p>
                               <p><code>cat original.csv | tr -s '\r' '\n' > normalized.csv</code></p>
 
