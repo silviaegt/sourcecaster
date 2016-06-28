@@ -345,13 +345,13 @@
   </div>
   <!-- normalize case -->
   
-    <!-- normalize excel csv -->
-  <span data-toggle="modal" data-target=".ncsv"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="search and combine">normalize excel csv</button></span>
+    <!-- normalize line breaks, excel -->
+  <span data-toggle="modal" data-target=".ncsv"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="normalize line breaks, excel">normalize line breaks, excel</button></span>
   <div class="modal fade ncsv" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="well">
-          <h3>normalize excel csv</h3>
+          <h3>normalize line breaks, excel</h3>
            <p><i>Sometimes you end up working with csv files that were produced using Microsoft Excel. Excel often introduces irregularities into the data structure. If for example, you wanted to import a csv produced using Excel into <a href="https://www.sqlite.org/" target="_blank">sqlite</a>, it would fail given that Excel uses \r to indicate new lines in the data rather than the \n that sqlite expects.</i></p>
                     <p>This will replace the all \r line breaks with \n line breaks.</p>
                               <p><code>cat original.csv | tr -s '\r' '\n' > normalized.csv</code></p>
@@ -365,7 +365,7 @@
       </div>
     </div>
   </div>
-  <!-- normalize excel csv -->
+  <!-- normalize line breaks, excel -->
     </div>
    <div class="well">
   <h4>getting</h4>
