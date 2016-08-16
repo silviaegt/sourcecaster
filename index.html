@@ -90,6 +90,30 @@
   </div>
   <!-- ends tiff to txt -->
   
+      <!-- pdf to tiff -->
+  <span data-toggle="modal" data-target=".pdfto_tiff"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="pdf to tiff">pdf to tiff</button></span>
+  <div class="modal fade pdfto_tiff" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>pdf to tiff</h3>
+           <p><i>Sometimes you want to convert PDF images of pages to TIFF images of pages in order to perform optical character recognition (OCR) using Tesseract. Tesseract can in turn be used to generate plain text data from the TIFF images of pages.</i></p>
+          <p>This will convert all PDF images of pages in a folder to to TIFF images of pages.</p>
+                    <p><code>mogrify -density 300 -format tiff -depth 8 "*.pdf"</code></p>
+
+          <dl>
+            <dt>mogrify</dt><dd>convert allf files in folder</dd>
+            <dt>-density 300</dt><dd>at a density of 300</dd>
+                        <dt>-format tiff</dt><dd>generate tiff files</dd>
+                                                <dt>-depth 8</dt><dd>at 8 bit depth</dd>
+            <dt>"*.pdf"</dt><dd>from all pdf files</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ends pdf to tiff -->
+  
       <!-- html to txt -->
   <span data-toggle="modal" data-target=".htmlto_txt"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="html to txt">html to txt</button></span>
   <div class="modal fade htmlto_txt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
