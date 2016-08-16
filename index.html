@@ -99,11 +99,14 @@
           <h3>pdf to tiff</h3>
            <p><i>Sometimes you want to convert PDF images of pages to TIFF images of pages in order to perform optical character recognition (OCR) using Tesseract. Tesseract can in turn be used to generate plain text data from the TIFF images of pages.</i></p>
           <p>This will convert all PDF images of pages in a folder to to TIFF images of pages.</p>
-                    <p><code>mogrify -density 300 -format tiff -depth 8 "*.pdf"</code></p>
+                    <p><code>mogrify -type Grayscale -compress lzw -density 300 -format tiff -depth 8 "*.pdf"</code></p>
 
           <dl>
             <dt>mogrify</dt><dd>convert all files in folder</dd>
-            <dt>-density 300</dt><dd>at a density of 300</dd>
+                        <dt>-type Grayscale</dt><dd>specify Grayscale image type</dd>
+                        <dt>-compress lzw</dt><dd>use LZW compression</dd>
+
+            <dt>-density 300</dt><dd>specify pixel density of 300</dd>
                         <dt>-format tiff</dt><dd>generate tiff files</dd>
                                                 <dt>-depth 8</dt><dd>at 8 bit depth</dd>
             <dt>"*.pdf"</dt><dd>from all pdf files</dd>
