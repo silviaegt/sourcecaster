@@ -393,6 +393,30 @@
     </div>
   </div>
   <!-- normalize line breaks, excel -->
+
+    <!-- find & replace characters -->
+  <span data-toggle="modal" data-target=".rplsed"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="find & replace characters">find & replace characters</button></span>
+  <div class="modal fade rplsed" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>find & replace characters</h3>
+           <p><i>Sometimes you have text files that have a particular string of text that you want removed or replaced, for example the start of an URL, but the text file is too big to be opened within your favorite, graphical user interface editor.</i></p>
+                    <p>From a list of URLs following the pattern http://viaf.org/viaf/24597135, this will substitute <i>http://viaf.org/viaf/</i>  with <i>ID:</i>. To remove something instead of replacing it, the second argument can be omitted.</p>
+                              <p><code>sed 's/http:\/\/viaf.org\/viaf\//ID:/' < input.txt > output.txt</code> <br>
+			      <code> sed 's/http:\/\/viaf.org\/viaf\///' < input.txt > output.txt </code></p>
+
+                              <dl>
+            <dt>sed 's/http:\/\/viaf.org\/viaf\//ID:/'</dt><dd>Pattern 's/whatwelookfor/whatwereplaceitby/', while escaping the slashes</dd>
+            <dt>< input.txt</dt><dd>the input</dd>
+            <dt>> output.txt</dt><dd>save the modified output in a file called output.txt</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- find & replace characters -->
+
     </div>
    <div class="well">
   <h4>getting</h4>
