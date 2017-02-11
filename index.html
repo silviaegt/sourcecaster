@@ -416,6 +416,28 @@
     </div>
   </div>
   <!-- find & replace characters -->
+	 
+    <!-- list files and give them IDs -->
+  <span data-toggle="modal" data-target=".rplsed"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="list files and give them IDs">list files and give them IDs</button></span>
+  <div class="modal fade rplsed" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>list files and give them IDs</h3>
+           <p><i>Sometimes you want a list of files and to give those files numeric IDs. This can be a useful first step in building a database.</i></p>
+                    <p>This will find all the files in the directory 'folder' (and all subdiresctories), assign those files unique IDs, and save the output as a spreadsheet.</p>
+                              <p><code>i=0; find folder -type f | while read image; do echo "$i,$image"; i=$((i+1)); done > foobar.csv</code></p>
+		
+                              <dl>
+            <dt>i=0; find folder -type f |</dt><dd>Start a count at one, find the directory 'folder' and all subdirectories, and hold that in memory</dd>
+            <dt>while read image; do echo "$i,$image"; i=$((i+1)); done<dd>look at the first file in the directory 'folder' and all subdirectories and assign to it the ID 1. Repeat for each subsequent file, increasing the ID by 1 each time</dd>
+            <dt>> foobar.csv</dt><dd>save the ouput in a file called foobar.csv</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- find & replace characters -->
 
     </div>
    <div class="well">
