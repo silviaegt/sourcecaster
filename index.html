@@ -515,6 +515,31 @@
     </div>
   </div>
   <!-- save command line history -->
+	  
+  <!-- find common scripts -->
+  <span data-toggle="modal" data-target=".create_gif"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="command line history">find common scripts</button></span>
+  <div class="modal fade create_gif" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="well">
+          <h3>find common scripts</h3>
+           <p><i>Sometimes you can't remember a shell scripts but know you've used it more than once in the recent past.</i></p>
+                    <p>This will create an output of the 20 most common shell scripts in your shell history.</p>
+                              <p><code>history | cut -c 8- | sort | uniq -c | sort -rn | head -${1:-20}</code></p>
+
+                              <dl>
+            <dt>history</dt><dd>take command line history</dd>
+            <dt>cut -c 8-</dt><dd>remove characters you don't need</dd>
+	    <dt>sort</dt><dd>sort what is left so that all similar lines are adjacent</dd>
+	    <dt>uniq -c</dt><dd>count unique lines</dd>
+	    <dt>sort -rn</dt><dd>reverse sort the output numerically</dd>
+	    <dt>head -${1:-20}</dt><dd>print the top 20 lines</dd>  
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- find common scripts -->
 
     <!-- Edit many filenames -->
   <span data-toggle="modal" data-target=".editfn"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="filenames">filenames</button></span>
