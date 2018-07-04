@@ -242,8 +242,8 @@
       <div class="modal-content">
         <div class="well">
           <h3>extracting images from pdf files</h3>
-           <p><i>Sometimes you want to extract the images in a pdf like separate images.</i></p>
-                    <p>This will save all the images in a pdf in seperate .png files with the page in which they were found encoded in the title</p>
+           <p><i>Sometimes you want to extract images from pdfs and store them as separate files.</i></p>
+                    <p>This will extract all the images from pdfs and save them as seperate .png files with the page in which they were found encoded in the title</p>
                               <p><code>for f in *.pdf; do pdfimages $f ${f%.*} -p -png; done</code></p>
 		 <dl>
             <dt>for f in</dt><dd>for every file (f) in the folder</dd>
